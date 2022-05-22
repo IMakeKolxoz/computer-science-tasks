@@ -8,9 +8,9 @@ readln(M); // считываем переменную M
 write('Введите K: '); 
 readln(K); // считываем переменную K
 summ := 0;
-for i:=1 to N do   //объявляем  цикла
+for i:=1 to M do   //объявляем  цикла
   begin
-  for j:=1 to M do   //объявляем  цикла
+  for j:=1 to N do   //объявляем  цикла
   begin
   a[i,j] := random(5);
    write(a[i,j], ' ');
