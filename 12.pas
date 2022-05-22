@@ -1,15 +1,13 @@
 var a: array[1..100, 1..100] of integer; //cоздаем матрицу a формата integer
-    i, j, A, M, summ :integer; //cоздаем переменные 
+    i, j, M, summ :integer; //cоздаем переменные 
 begin
-write('Введите A: '); 
-readln(A); // считываем переменную N
 write('Введите M: '); 
 readln(M); // считываем переменную M
 summ := 0;
 //создаем матрицу и заполняем её
 for i:=1 to M do   //объявляем  цикл
   begin
-  for j:=1 to A do   //объявляем  цикл
+  for j:=1 to M do   //объявляем  цикл
   begin
   a[i,j] := random(0, 5);
    write(a[i,j], ' ');
