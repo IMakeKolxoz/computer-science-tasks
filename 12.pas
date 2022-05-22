@@ -14,9 +14,11 @@ for i:=1 to M do   //объявляем  цикл
   a[i,j] := random(0, 5);
    write(a[i,j], ' ');
    if (M+1-i) = j then 
-    summ := summ + a[i,j];
+    begin
+      summ := summ + a[i,j];
+    end;
   end;
   writeln();
 end;  
-writeln('Сумма побочной диагонали диагонали: ', summ);
+writeln('Среднее арифмитическое: ', summ/M);
 end.
